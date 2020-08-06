@@ -1,0 +1,177 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;800&display=swap");
+body {
+  margin: 0;
+  overflow: hidden;
+}
+
+.App {
+  align-items: center;
+  background-color: #d8deeb;
+  display: flex;
+  font-family: "Open Sans";
+  font-weight: 800;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.phone {
+  align-items: center;
+  /*   background-color: #4947b1; */
+  border-radius: 30px;
+  box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.02),
+    0 6.7px 5.3px rgba(0, 0, 0, 0.028), 0 12.5px 10px rgba(0, 0, 0, 0.035),
+    0 22.3px 17.9px rgba(0, 0, 0, 0.042), 0 41.8px 33.4px rgba(0, 0, 0, 0.05),
+    0 100px 80px rgba(0, 0, 0, 0.07);
+  display: flex;
+  flex-direction: column;
+  height: 500px;
+  overflow: hidden;
+  position: relative;
+  width: 260px;
+}
+
+.background {
+  position: absolute;
+}
+
+.sheet {
+  border-top-left-radius: 32px;
+  border-top-right-radius: 32px;
+  cursor: grab;
+  height: 120%;
+  position: absolute;
+  width: 100%;
+  will-change: transform;
+}
+
+.top-sheet {
+  background-color: #eff0f2;
+}
+
+.top-sheet-title {
+  color: #333;
+  font-family: "Open Sans";
+  font-size: 20px;
+  margin: 32px 0 0 20px;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+.top-sheet-card {
+  border-radius: 16px;
+  box-shadow: 0 1.1px 3.6px rgba(0, 0, 0, 0.044),
+    0 3px 10px rgba(0, 0, 0, 0.048), 0 7.2px 24.1px rgba(0, 0, 0, 0.047),
+    0 24px 80px rgba(0, 0, 0, 0.06);
+  margin-left: 20px;
+  margin-top: 24px;
+}
+
+.top-sheet-card:first-child {
+  margin-top: 32px;
+}
+
+.bottom-sheet {
+  background-color: #fff;
+}
+
+.bottom-sheet-title {
+  color: #333;
+  font-family: "Open Sans";
+  font-size: 20px;
+  margin: 32px 0 0 20px;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+.bottom-sheet-list {
+  list-style: none;
+  padding: 0;
+  margin-top: 48px;
+}
+
+.bottom-sheet-item {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  margin: 20px;
+}
+
+.bottom-sheet-transaction {
+  background-color: #eff0f2;
+  border-radius: 50%;
+  height: 40px;
+  margin-right: 12px;
+  width: 40px;
+}
+
+.bottom-sheet-transaction-descr {
+  font-weight: 400;
+  font-size: 10px;
+  margin-right: 12px;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+.bottom-sheet-transaction-amount {
+  flex-shrink: 0;
+  font-size: 14px;
+  margin-left: auto;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+.avatar {
+  border-radius: 50%;
+  margin-top: 120px;
+  transform-origin: 50% 0;
+  width: 100px;
+  user-select: none;
+  -webkit-user-select: none;
+  will-change: transform;
+}
+
+.name {
+  color: #fff;
+  font-family: "Open Sans";
+  font-size: 24px;
+  top: 236px;
+  position: absolute;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+.balance {
+  font-family: Open Sans;
+  height: 0;
+  left: 42px;
+  position: relative;
+  top: -62px;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+.balance-title {
+  font-weight: 400;
+  font-size: 14px;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+.balance-white {
+  color: white;
+}
+
+.balance-amount {
+  font-weight: 700;
+  font-size: 20px;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+.image {
+  background-color: red;
+  border-radius: 50%;
+  height: 3rem;
+  width: 3rem;
+}
